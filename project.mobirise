@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "etherscan-tokens",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/etherscan-favicon-resized.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://etherscan-tokens.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://etherscan-tokens.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "mxoz4ixym1",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Etherscan - Ethereum Token Traker",
+        "meta_descr": "Explore Etherscan, the leading Ethereum blockchain explorer, to track transactions, verify smart contracts, and monitor tokens and NFTs.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://etherscan.io/\"><img src=\"@PROJECT_PATH@/assets/images/etherscenn.png\" alt=\"etherscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vjuUt3hhLt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>- Ethereum Token Traker</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan</a>: The Window into Ethereum’s Blockchain</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of cryptocurrencies, transparency and accessibility are key to fostering trust and understanding. One tool that has become indispensable for Ethereum users is Etherscan, a blockchain explorer that allows anyone to view, track, and verify transactions on the Ethereum network. But what exactly is <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan</a>, and why has it become so vital to the Ethereum ecosystem?<br><br><b>What is <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan</a>?<br></b><a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>is a <b>blockchain explorer and analytics platform</b> specifically designed for the Ethereum network. Launched in 2015 by founder <b>Matthew Tan</b>, Etherscan provides a user-friendly interface for navigating Ethereum’s decentralized ledger. It allows users to search for transactions, wallet addresses, smart contracts, and tokens, making blockchain data accessible to both beginners and experts.<br><br>At its core, <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>serves as a <b>public ledger viewer</b>, where every transaction on Ethereum is recorded and can be verified independently. Unlike traditional banking systems, where transaction histories are private, Ethereum’s blockchain is open, and Etherscan acts as the key to unlock this transparency.<br><br><b>Key Features of <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan</a><br>1. Transaction Tracking :-<br></b><a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>allows users to track any Ethereum transaction using a <b>transaction hash</b>. This includes details such as the sending and receiving addresses, transaction value, gas fees, and the number of confirmations. For anyone sending Ether (ETH) or tokens, this feature provides peace of mind by confirming the transaction’s status.<br><br><b>2. Wallet Address Lookup :-<br></b>Users can enter any Ethereum wallet address to see its balance, transaction history, and associated tokens. This is particularly useful for verifying payments or auditing holdings.<br><br><b>3. Smart Contract Verification :-<br></b>Smart contracts are self-executing programs on Ethereum, and <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>enables developers and users to verify and interact with them. Verified contracts have their source code publicly available, enhancing trust and transparency.<br><br><b>4. Token and NFT Tracking :-<br></b>With the explosion of ERC-20 tokens and NFTs (<b>ERC-721 and ERC-1155</b>), <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>provides tools to explore token transactions, holdings, and ownership. Users can check token supply, transfers, and even NFT metadata.<br><br><b>5. Analytics and Charts :-<br></b>Beyond simple lookups, <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>offers insights into network activity, including gas fees, transaction volumes, and top token holders. These analytics are valuable for traders, developers, and researchers.<br><br><b>6. Developer Tools :-<br></b>For developers, <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>provides APIs to integrate blockchain data into applications. This has become crucial for building wallets, <b>dApps</b>, and <b>DeFi </b>platforms that require real-time blockchain information.<br><br><b>Why Etherscan Matters<br></b>Blockchain technology is celebrated for its transparency, but raw blockchain data can be overwhelming. <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a><b>bridges the gap</b> between complex blockchain records and understandable information. It is trusted by millions of users worldwide and is often cited as the go-to resource for transaction verification, fraud prevention, and research.<br><br>Moreover, Etherscan fosters <b>community accountability</b>. With every transaction publicly visible, users can investigate suspicious activity, monitor large token movements, or even audit the behavior of DeFi platforms.<br><br><b>Limitations and Considerations<br></b>While <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>is powerful, it is not without limitations:<br><br><b>Privacy:</b> All Ethereum transactions are public. While <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>does not expose personal identities, addresses can sometimes be linked to individuals.<br><b>Complexity for Beginners:</b> Understanding all the data on <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan</a>, like gas fees and contract interactions, can be intimidating for new users.<br><b>Reliance on Centralized Access:</b> <a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan </a>itself is a centralized service, so while the blockchain is decentralized, users rely on Etherscan’s interface for convenience.<br><br><b>Conclusion<br></b><a href=\"https://etherscan.io/\" class=\"text-primary\">Etherscan.io</a> is more than just a blockchain explorer—it is the <b>lens through which Ethereum’s decentralized world becomes readable and transparent. </b>Whether you are a developer, trader, investor, or simply a curious crypto enthusiast, Etherscan provides the tools to explore, verify, and understand Ethereum’s complex ecosystem. Its importance cannot be overstated in a world where trust and transparency are as valuable as the digital assets themselves.<br><br>In the ever-expanding universe of Ethereum, Etherscan remains a guiding star, illuminating the path through the intricate web of transactions, contracts, and tokens.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vjuUu6s5mh",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
